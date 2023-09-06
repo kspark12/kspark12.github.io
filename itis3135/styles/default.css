@@ -2,15 +2,13 @@ body{
     background-color: cornflowerblue;
 }
 
-nav{
-    color: wheat;
-}
-
 h1,h2{
     color:bisque;
+    text-align: center;
 }
 
 a, nav{
     color:blueviolet;
     text-decoration: none;
+    text-align: center;
 }
