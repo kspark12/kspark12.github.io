@@ -7,6 +7,10 @@ h1,h2{
     text-align: center;
 }
 
+p{
+    color:bisque;
+}
+
 a, nav{
     color:blueviolet;
     text-decoration: none;
