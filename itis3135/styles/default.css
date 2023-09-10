@@ -2,12 +2,12 @@ body{
     background-color: black;
 }
 
-h1,h2{
+h1,h2, td, th{
     color:bisque;
     text-align: center;
 }
 
-p, ul, figcaption{
+p, ul, ol, figcaption, h3{
     color:bisque;
 }
 
