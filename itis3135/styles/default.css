@@ -7,7 +7,7 @@ h1,h2, td, th{
     text-align: center;
 }
 
-p, ul, ol, figcaption, h3{
+p, ul, ol, figcaption, h3, form{
     color:bisque;
 }
 
