@@ -20,3 +20,7 @@ a, nav{
 div{
     text-align: center;
 }
+
+table{
+    border: 2px solid bisque;
+}
