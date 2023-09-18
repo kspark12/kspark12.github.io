@@ -4,54 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SparksCorp</title>
+    <!-- Color scheme from Coolors: https://coolors.co/1a1423-008dd5-685634-bcc1ba-f2e2d2 -->
     <style>
         /* Embedded Stylesheet */
         body {
             font-family: Arial, sans-serif;
-            background-color:bisque;
+            background-color: #F2E2D2;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #333;
+            background-color: #1A1423;
             color: Bisque;
             padding: 10px;
+        }
+
+        header img{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
         }
 
         main {
             padding: 20px;
         }
+        div{
+            text-align: center;
+        }
 
         footer {
-            background-color: #333;
-            color: bisque;
+            background-color: #1A1423;
+            color: #F2E2D2;
             text-align: center;
             padding: 10px;
         }
 
       
         footer a {
-            color: bisque;
+            color: #F2E2D2;
             text-decoration: none;
         }
 
         footer a[href^="sparkscorp.net/"]::before {
             content: "Designed by ";
         }
+
+        .contact-info{
+            font-size: 16px;
+            margin-top: 20px;
+            border: 1px;
+            border-color: #1A1423;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://www.logolynx.com/images/logolynx/81/8151b3be54a6b890731b0d291fb49554.png" alt="Sparkscorp Logo" width="100" height="100">
         <h1>Welcome to SparksCorp</h1>
     </header>
     <main>
-        <h2>Home of the Kooky Sloths</h2>
+        <h2>Home of the SparksCorp Kooky Sloths</h2>
+        <p> "Our Company Prides itself on providing unique and professional website help unlike the competition.
+            Here at SparksCorp we are built upon the belief that anyone and everyon can succeed. We are the best above the rest, 
+            and continue to provide unparralled service to our customers." - CEO: Kyle Sparks, II </p>
+
+        <ul>
+            <li>Expert Web Design</li>
+            <li>Custom Software Development</li>
+            <li>Graphic Design Excellence</li>
+            <li>Strategic Consulting Services</li>
+            <li>Timely Project Delivery</li>
+        </ul>
+
+        <p> At SparksCorp, it is our mission to provide you with excellent customer sercive, and a consumer experience unlike any other!</p>
+
+        <div class="contact-info">
+            <p>Email us here: sparkscorp.questions@sparkcorp.com</p>
+            <p>Call us with any questions at: +1 (999)- not- real</p>
+            <p>Located at: 1778 SparkCorp Ln. Mint Hill, NC 28227 USA</p>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2023 SparksCorp</p>
-        <!-- Update the link to the current directory -->
-        <p><a href="sparkscorp.net/">SparksCorp </a></p>
+        <div>
+        <p>Presented By:<a href="sparkscorp.net/">&copy; 2023 Sparkscorp</a></p>
+        
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0; width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        </div>
     </footer>
 </body>
 </html>
