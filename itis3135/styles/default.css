@@ -4,13 +4,10 @@ body{
 }
 
 h1,h2, td, th{
-    color:bisque;
+    
     text-align: center;
 }
 
-p, ul, ol, figcaption, h3, form{
-    color:bisque;
-}
 
 a, nav{
     color:brown;
