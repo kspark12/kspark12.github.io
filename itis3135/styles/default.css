@@ -8,6 +8,16 @@ h1,h2, td, th{
     text-align: center;
 }
 
+form, h3{
+    margin: auto;
+    width: 400px;
+}
+
+button{
+    margin: auto;
+    width: auto;
+}
+
 
 a, nav{
     color:brown;
