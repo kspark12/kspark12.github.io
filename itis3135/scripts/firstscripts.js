@@ -4,7 +4,7 @@ function greetUser() {
     const userNumber = Math.abs(Math.round(parseFloat(document.getElementById("userNumber").value)));
 
     const greeting = document.getElementById("greeting");
-    greeting.innerHTML = `The MyCompany welcomes you, ${userName}!<br>We're glad you are doing ${userMood}!<br>`;
+    greeting.innerHTML = `SparksCorp. Home to the Kooky Sloths welcomes you, ${userName}!<br>We're glad you are doing ${userMood}!<br>`;
     
     // Determine and display the polygon name
     const polygonName = getPolygonName(userNumber);
@@ -24,7 +24,7 @@ function getPolygonName(sides) {
 
 function provideInsult() {
     // Function to provide a harmless insult
-    alert("You're so unique that you're a real rarity!");
+    alert("You look you'd build a crappy webpage! haha all in good fun");
 }
 
 function calculateTax() {
