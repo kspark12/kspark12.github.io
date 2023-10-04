@@ -11,6 +11,11 @@ function greetUser() {
     alert(`The polygon with ${userNumber} sides is called a ${polygonName}`);
 }
 
+function setDate(){
+    document.getElementById("dateTime").innerHTML = Date();
+    setTimeout(setDate, 1000);
+}
+
 function getPolygonName(sides) {
     const polygonNames = {
         1: "Henagon",
@@ -41,3 +46,5 @@ function provideCompliment() {
     // Function to provide a compliment
     alert("You're amazing and capable of achieving anything you set your mind to!");
 }
+
+setDate();
