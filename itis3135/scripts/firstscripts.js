@@ -29,7 +29,7 @@ function getPolygonName(sides) {
 
 function provideInsult() {
     // Function to provide a harmless insult
-    alert("You look you'd build a crappy webpage! haha all in good fun");
+    alert("You look you'd build a crappy webpage!");
 }
 
 function calculateTax() {
