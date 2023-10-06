@@ -16,18 +16,18 @@ let numCourses = 1;
 //}
 
 function addCourse() {
-    const coursesContainer = document.getElementById("coursesCont");
+    const coursesCont = document.getElementById("coursesCont");
     const newCourseInput = document.createElement("input");
     newCourseInput.type = "text";
     newCourseInput.name = "courses[]";
-    coursesContainer.appendChild(newCourseInput);
+    coursesCont.appendChild(newCourseInput);
 
     const deleteButton = document.createElement("button");
     deleteButton.type = "button";
     deleteButton.textContent = "Delete";
     deleteButton.onclick = function () {
-        coursesContainer.removeChild(newCourseInput);
-        coursesContainer.removeChild(deleteButton);
+        coursesCont.removeChild(newCourseInput);
+        coursesCont.removeChild(deleteButton);
     };
     coursesContainer.appendChild(deleteButton);
 }
