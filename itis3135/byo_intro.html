@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Sparks, II Kooky Sloth || ITIS 3135 Survey</title>
+    <link rel="stylesheet" href="styles/default.css">
+    
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <br>
+    <main>
+        <h3>Build your Into page here: fill out this form with the information.</h3>
+        <br>
+        <form id="infoForm">
+            <label>
+                Name: <input type="text" name="name" value="Your Name">
+            </label>
+            <br>
+            <br>
+            <label>
+                Mascot: <input type="text" name="mascot" value="company mascot">
+            </label>
+            <br>
+            <br>
+            <label>
+                Image (PNG or JPG): <input type="file" name="image" accept=".png, .jpg">
+            </label>
+            <br>
+            <br>
+            <label>
+                Image Caption: <input type="text" name="Image caption" value="Photo of you...">
+            </label>
+            <br>
+            <br>
+            <label>
+                Personal Background: <textarea name="personal">Where are you from...</textarea>
+            </label>
+            <br>
+            <br>
+            <label>
+                Professional Background: <textarea name="professional">Technical experience...</textarea>
+            </label>
+            <br>
+            <br>
+            <label>
+                Academic Background: <textarea name="academic">School(s) you have attended...</textarea>
+            </label>
+            <br>
+            <br>
+            <label>
+                Background in Web Development: <textarea name="webDev">Started web dev in 2000...</textarea>
+            </label>
+            <br>
+            <br>
+            <label>
+                Primary Computer Platform: <input type="text" name="platform" value="Windows">
+            </label>
+            <br>
+            <br>
+            <div id="coursesCont">
+                <label>
+                    Courses currently taking: 
+                    <button type="button" onclick="remove(0)" style="display: none;">Remove</button>
+                </label>
+            </div>
+            <br>
+            <button type="button" onclick="addCourse()">Add Course</button>
+            <br>
+            <br>
+            <label>
+                Funny thing? <input type="text" name="funnyThing" value="I think flatulence is hilarious">
+            </label>
+            <br>
+            <br>
+            <label>
+                Anything else? <textarea name="anythingElse">can be literally anything.</textarea>
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="agreement">
+                I understand that what is on this page is not password protected and I will not put 
+                anything here that I don’t want publicly available.
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <br>
+
+        <div id="output"></div>
+        
+        
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/intro_survey.js"></script>
+</body>
