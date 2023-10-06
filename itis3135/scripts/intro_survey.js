@@ -16,7 +16,7 @@ function courseAdd(){
 }
 
 function remove(courseNum){
-const inputData = document.querySelector('input[name="course${courseNum}"]');
+const inputData = document.querySelector('input[name="course${numCourses}"]');
 if(inputData){
     const parentDiv =inputData.closest('.course-item');
     parentDiv.remove();
