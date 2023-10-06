@@ -15,7 +15,7 @@ let numCourses = 1;
    // numCourses++;
 //}
 
-function addCourseField() {
+function addCourse() {
     const coursesContainer = document.getElementById("coursesCont");
     const newCourseInput = document.createElement("input");
     newCourseInput.type = "text";
