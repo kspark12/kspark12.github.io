@@ -1,22 +1,39 @@
 let numCourses = 1;
 
-function courseAdd(){
-    const courseCont = documentgetElementById('courseCont');
-    const courseData = document.getElementById('div');
-    courseData.innerHTML =
-    <div class = 'course-item'>
-        <label>
-            Course: 
-            <input type="text" name="course${numCourses}"></input>
-        </label>
-        <button type="button" onclick="remove(${numCourses})">Remove</button>
-    </div>
-    courseCont.appencdChild(courseElement);
-    numCourses++;
+//function courseAdd(){
+  //  const courseCont = documentgetElementById('courseCont');
+  //  const courseData = document.getElementById('div');
+  //  courseData.innerHTML =
+  //  <div class = 'course-item'>
+   //     <label>
+   //         Course: 
+    //        <input type="text" name="course${numCourses}"></input>
+   //     </label>
+   //     <button type="button" onclick="remove(${numCourses})">Remove</button>
+   // </div>
+   // courseCont.appencdChild(courseElement);
+   // numCourses++;
+//}
+
+function addCourseField() {
+    const coursesContainer = document.getElementById("coursesCont");
+    const newCourseInput = document.createElement("input");
+    newCourseInput.type = "text";
+    newCourseInput.name = "courses[]";
+    coursesContainer.appendChild(newCourseInput);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.textContent = "Delete";
+    deleteButton.onclick = function () {
+        coursesContainer.removeChild(newCourseInput);
+        coursesContainer.removeChild(deleteButton);
+    };
+    coursesContainer.appendChild(deleteButton);
 }
 
 function remove(courseNum){
-const inputData = document.querySelector('input[name="course${numCourses}"]');
+const inputData = document.querySelector('input[name="course${courseNum}"]');
 if(inputData){
     const parentDiv =inputData.closest('.course-item');
     parentDiv.remove();
