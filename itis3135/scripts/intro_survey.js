@@ -29,7 +29,7 @@ function addCourse() {
         coursesCont.removeChild(newCourseInput);
         coursesCont.removeChild(deleteButton);
     };
-    coursesContainer.appendChild(deleteButton);
+    coursesCont.appendChild(deleteButton);
 }
 
 function remove(courseNum){
