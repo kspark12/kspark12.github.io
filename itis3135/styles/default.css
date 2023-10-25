@@ -3,12 +3,18 @@ body{
     color: bisque;
 }
 
-h1,h2, td, th{
+td, th{
     
     text-align: center;
 }
 
-form, h3{
+h3,h2,h1{
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
+
+form{
     margin: auto;
     width: 400px;
 }
@@ -31,4 +37,11 @@ div{
 
 table{
     border: 2px solid bisque;
+}
+
+
+@media (min-width: 576px) {
+ul{
+    padding-left: 15px;
+}
 }
