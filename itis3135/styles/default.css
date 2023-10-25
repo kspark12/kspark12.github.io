@@ -13,6 +13,9 @@ h3,h2,h1{
     width: 400px;
     text-align: center;
 }
+p{
+    padding-left: 15px;
+}
 
 form{
     margin: auto;
