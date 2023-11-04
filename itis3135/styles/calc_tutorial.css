@@ -3,13 +3,13 @@
   margin: auto;
 }
 
-#calculator_display * {
+#calculator__display * {
   /*border: solid 1px white;*/
   margin: 0;
   margin-right: 0.5rem;
 }
 
-#calculator_display {
+#calculator__display {
   height: 2rem;
   border: var(--secondary-color) 2px solid;
   text-align: right;
@@ -17,12 +17,12 @@
   padding: 5px
 }
 
-#calculator_keys {
+#calculator__keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#calculator_keys > * {
+#calculator__keys > * {
   padding: 10px;
 }
 
