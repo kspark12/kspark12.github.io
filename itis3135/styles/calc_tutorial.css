@@ -1,6 +1,7 @@
 #calculator {
   max-width: 400px;
   margin: auto;
+  border: solid 2px bisque;
 }
 
 #calculator__display * {
