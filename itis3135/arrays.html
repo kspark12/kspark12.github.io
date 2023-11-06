@@ -12,6 +12,33 @@
     <main>
         <h2>ITIS 3135 Arrays</h2>
 
+        <label for="employee">Select an employee:</label>
+    <select id="employee">
+        <option value="John Doe">ex: John Doe</option>
+        <option value="Kyle Sparks">Kyle Sparks</option>
+        <option value="KJ Parks">KJ Parks</option>
+        <option value="Sydney Roth">Sydney Roth</option>
+        <option value="Jimmy Neutron">Jimmy Neutron</option>
+        <option value="Donald Trump">Donald Trump</option>
+        <option value="Chris Chistians">Chris Chistians</option>
+        <option value="Johnny Lightning">Johnny Lightning</option>  
+        <option value="Rachel Shadows">Rachel Shadows</option>
+    </select>
+    <br><br>
+    <label for="salary">Salary: </label>
+    <input type="text" id="salary">
+    <button onclick="addSalary()">Add</button>
+    <button onclick="displaySalary()">Display Salary</button>
+    <br><br>
+    <div id="results"></div>
+    <br><br>
+    <table id="results_table">
+        <tr>
+            <th>Employee || </th>
+            <th>Yearly Salary</th>
+        </tr>
+    </table>
+
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>
