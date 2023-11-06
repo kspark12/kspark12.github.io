@@ -1,16 +1,16 @@
-#calculator {
+.calculator {
   max-width: 400px;
   margin: auto;
   border: solid 2px bisque;
 }
 
-#calculator__display * {
+.calculator__display * {
   /*border: solid 1px white;*/
   margin: 0;
   margin-right: 0.5rem;
 }
 
-#calculator__display {
+.calculator__display {
   height: 2rem;
   border: var(--secondary-color) 2px solid;
   text-align: right;
@@ -18,17 +18,17 @@
   padding: 5px
 }
 
-#calculator__keys {
+.calculator__keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#calculator__keys > * {
+.calculator__keys > * {
   padding: 10px;
 }
 
-#key--equals {
+.key--equal {
   grid-column: 4;
-  grid-row-start: 3;
+  grid-row-start: 2;
   grid-row-end: 6;
 }
