@@ -34,6 +34,20 @@ a, nav{
     text-align: center;
 }
 
+a:link{
+    color: brown;
+}
+
+
+
+a:hover{
+    color: bisque;
+}
+
+a:active{
+    color: blue;
+}
+
 div{
     text-align: center;
 }
