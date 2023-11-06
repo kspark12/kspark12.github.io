@@ -23,7 +23,7 @@ form{
 }
 
 button{
-    text-align: center;
+   align-items: center;
     width: auto;
 }
 
@@ -72,6 +72,13 @@ button {
     margin: 5px;
     font-size: 10px;
     align-items: center;
+}
+
+.calculator_keys button{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 10px;
 }
 
 
