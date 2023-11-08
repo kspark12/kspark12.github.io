@@ -17,6 +17,22 @@ p{
     padding-left: 100px;
 }
 
+#introfizz{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#fizzbuzzcontent{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
 form{
     margin: auto;
     width: 400px;
