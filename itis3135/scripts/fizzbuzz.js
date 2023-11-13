@@ -5,19 +5,19 @@ const fizzBuzzParagraph= document.getElementById("fizzbuzzcontent");
 
 
 function fizzBuzz(){
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 110; i++) {
        let tempStr= "";
 
        if(i%3==0){
-           tempStr+="Fizz";
+           tempStr+="Fizz ";
        }
 
        if(i%5==0){
-           tempStr+="Buzz";
+           tempStr+="Buzz ";
        }
 
        if(i%7==0){
-              tempStr+="BANG!";
+              tempStr+="BANG! ";
        }
 
        if(tempStr==""){
@@ -27,4 +27,3 @@ function fizzBuzz(){
     }
 }
 
-fizzBuzz();

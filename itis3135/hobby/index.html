@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, 
+    maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <title>Hobby Page</title>
+    <script>
+            function showSection(sectionId) {
+            document.querySelectorAll("section").forEach((object) => {
+                object.style.display = "none";
+            });
+            document.querySelector(`#${sectionId}`).style.display = "initial";
+        }
+    </script>
+
+           <style>
+            :root {
+                --col1: #068D9D;
+                --col2: #53599A;
+                --col3: #6D9DC5;
+                --col4: #AEECEF;
+            }
+    
+            body {
+                margin: 0;
+                background: white;
+                color: white;
+                font-family: open 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            header {
+                background: var(--col4);
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+            }
+    
+            a {
+                text-decoration: none;
+                
+            }
+    
+            header a {
+                color: black;
+                text-decoration: none;
+                padding: 5px;
+                height: fit-content;
+               
+            }
+    
+            main a {
+                color: var(--col4);
+                
+            }
+    
+            a:hover {
+               
+                background-color: #53599A;
+                
+            }
+    
+            nav {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            header h1 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: auto;
+                text-align: center;
+            }
+    
+            header h5 {
+                margin: auto;
+            }
+    
+            main {
+                background: black;
+                border-radius: 10px;
+                padding: 5px;
+                margin: 5px 5px;
+            }
+    
+            figure img {
+                width: 100%;
+            }
+    
+            figcaption {
+                text-align: center;
+                font-style: italic;
+            }
+    
+            footer {
+                background: var(--col4);
+                color: white;
+                text-align: center;
+                padding: 1px 0;
+            
+                padding-bottom: 10px;
+            }
+            h2, h3{
+                text-align: center;
+            }
+            
+        </style>
+</head>
+<body>
+    <header>
+       
+        <a href="#" onclick="showSection('section1')">
+        <!-- <h1>&#128664</h1> -->
+        <h5><strong>KJ's Cars</strong></h5>
+        </a>
+        <nav>
+            <a href="#" onclick="showSection('m3_page')"><strong>BMW m3</strong></a>
+            <a href="#" onclick="showSection('c6_page')"><strong>C6 Corvette 'Modified'</strong></a>
+        </nav>
+    </header>
+    <main>
+        <section id="section1" style="display: initial;">
+        <h2>A love for Automobiles</h2>
+        <figure>
+            <img alt="My Corvette on the Tail" id="mountain" src="images/mountvette.JPG">
+            <figcaption>My Corvette on the Tail of the Dragon</figcaption>
+        </figure>
+        <p>
+            Growing up I always had an extreme love for cars and anything that makes loud noise and goes fast.
+            I used to scare my mom all the time as a child; when I was asked the question, "What do you 
+            want to be when you grow up?" I'd normally emphatically respond, "Moster Truck Driver," while smiling from ear to ear.
+            Only to end up having a mother with an absolutely mortified look on her face. I can't help it, it's in my blood.  With 
+            Great relatives, who either raced or owned auto shops, and a father who has always owned loud vehicles, 
+            I was destined for this life...
+        </p>
+        <h3>Car History</h3>
+        <p>
+            When I got my learners permit, My dad bought a car for us to share and have fun with. I am very blessed to have parents who 
+            support and provide for me the way that they do; just a disclaimer so I clear the air I havent paid for all of this myself haha.
+            But it was a black out tinted, straight piped, silverstone metallic, beast of a German v8. A 2011 BMW e92 m3 competiton package. I was in love, click the link 
+            for more info on the m3. Or skip that story and click the link for the C6 corvette I bought after the m3.
+        </p>
+        <a href="#" onclick="showSection('m3_page')"><strong>M3 HERE...</strong></a>
+        </section>
+        <section id="m3_page" style="display: none;">
+            <h2>My BMW m3: </h2>
+            <figure>
+                <img alt="My BMW m3" id="m3_1" src="images/m3.jpg">
+                <figcaption>I dont know where I was looking in this</figcaption>
+            </figure>
+            
+            <p>
+                I learned how to drive at speed in this car, I learned how to check oil, change fluids, understand routine maintenance, and 
+                how to truly love a car. I was opened to a world of experiences and adventures that I will never forget. I loved that car a ton and 
+                I am so lucky to have gotten to call it my 1st car, the fact my dad and I drove it together for a year and a half was amazing.
+            </p>
+                <figure>
+                    <img alt="My BMW m3_2" src="images/m3_2.jpg">
+                    <figcaption>bmw before oil leak</figcaption>
+                </figure>
+                <h3>Oil leak: beginning of the end...</h3>
+                <p>
+                    Altough this car was loads of fun, It had many problems. When we first bought the car we fixed the known rod bearing issue, 
+                    among other things. The photo above is when I drove to my first meet with my freinds after getting my full liscense. 
+                    I was so excited, but I popped the hood and saw oil everywhere. The car went on to have many issues, one of which even 
+                    left me stranded 40 miles form my house. With my father and I fed up, we sold the car during a time where it had gained significant value.
+                    He went on to buy a drag built 2008 c6 z06 corvette, and I went on to buy a 2011 c6 corvette with the money we made from selling the m3.
+                    next page has info on my vete aka "Screamin_c6" on instagram.
+                </p>
+        </section>
+
+        <a href="#" onclick="showSection('c6_page')"><strong>C6 HERE...</strong></a>
+        <section id="c6_page" style="display: none;">
+        <h2>Screamin_c6: </h2>
+        <p>
+            So in May of 2022 I bought the black 2011 base c6 corvette shown below. This car was all mine to drive, mod and enjoy. I couldn't wait.
+             I've had multiple jobs, for the specific purpose of paying for modifications ie. parts and labor. I have since paid for a full exhaust, 
+             cold air intake a performance tune, plus plenty of cosmetic upgrades. I have many plans for the car, if I keep this specific vette, I plan to widebody
+             it and put radials in the rear, put a massive cam, and definently upgrade some engine internals. 
+        </p>
+                <figure>
+                    <img alt="Screamin_c6" src="images/c6.jpg">
+                    <figcaption>Taken after I washed it for the 1st time</figcaption>
+                </figure>
+        <p>
+            Spending time at Jspeed Tuning has been a blast, having a family freind be an expert LS mechanic has been amazing
+            I'm there often jsut to hang out or see the drift vette my dad and I are having built there. I've seen my car and my dads on the dyno a feww times
+            and it never ceases to give me goosebumps. If computers dont work out for me, I think I certainly could have a future either modding cars or flipping them
+            for a profit. 
+        </p>
+
+        <figure>
+            <img alt="Screamin_c6_2" src="images/c6_2.jpg">
+            <figcaption>My Vette and My Father's Cars and Coffee</figcaption>
+        </figure>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../sparkscorp.net/index.html">&copy; 2023 Sparkscorp</a></p>
+        
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0; width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+
+</body>
+
+</html>
