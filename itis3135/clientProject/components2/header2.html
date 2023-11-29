@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* W3schools was used as a reference for the header. */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  background: #720026;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #720026;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #720026;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+
+<header>
+    
+    
+   <div class="topnav">
+    <a></a>
+    <div id="myLinks">
+    <a href="index.html">Home</a>
+
+    <a href="https://webpages.charlotte.edu/kspark12/">To My UNCC Home</a>
+    
+    <a href="contact_us.html">Contact Us</a>
+    
+    <a href="about_us.html">About Us</a>
+    
+    <a href="sparkies_history.html">History of Sparkie's</a>
+    
+    <a href="track_ready.html">Track Ready</a>
+    
+    <a href="drift_ready.html">Drift Ready</a>
+
+    <a href="weekend_cruiser.html">Weekend Cruiser</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+</header>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
